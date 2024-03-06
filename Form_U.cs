@@ -16,5 +16,10 @@ namespace ELEK_NODE_SOLVER
         {
             InitializeComponent();
         }
+
+        private void button_Apply_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

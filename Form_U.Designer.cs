@@ -125,6 +125,7 @@
             this.button_Apply.TabIndex = 7;
             this.button_Apply.Text = "ZASTOSUJ";
             this.button_Apply.UseVisualStyleBackColor = false;
+            this.button_Apply.Click += new System.EventHandler(this.button_Apply_Click);
             // 
             // Form_U
             // 

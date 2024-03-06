@@ -182,7 +182,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox_Raport);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ELEK_NODE_SOLVER";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

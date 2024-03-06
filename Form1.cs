@@ -37,23 +37,40 @@ namespace ELEK_NODE_SOLVER
         }
         private void button_Run_Click(object sender, EventArgs e)
         {
-            textBox_Raport.Text += "-------------------------------------------------------------------------------";
-            textBox_Raport.Text += "\n\r\n\r\n\r";
-            textBox_Raport.Text += Solver_Elek_Node().ToString();
-            textBox_Raport.Text += "\n\r\n\r\n\r";
+
+            switch (listBox1.SelectedIndex) 
+            {
+                case 0:
+                    
+                    break; //AC
+                case 1:
+                    textBox_Raport.Text += "-------------------------------------------------------------------------------";
+                    textBox_Raport.Text += "\n\r\n\r\n\r";
+                    textBox_Raport.Text += Solver_Elek_DC_Node().ToString();
+                    textBox_Raport.Text += "\n\r\n\r\n\r"; 
+                    
+                    break; //DC
+
+                case 2:
+                    
+                    break; //DYN
+                default: MessageBox.Show("NIE WYBRANO TRYBU DZIAŁANIA"); break;
+            }
         }
 
-        public double Solver_Elek_Node() 
+        // SOLVERY
+        public double Solver_Elek_DC_Node() 
         {
             return 0;
         }
 
+
+
+        // FORMULARZE
         private void button_U_Click(object sender, EventArgs e)
         {
             Form_U form_U= new Form_U();
-            form_U.Show();
-
-
+            form_U.Show();     
         }
 
         private void button_I_Click(object sender, EventArgs e)
